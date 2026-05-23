@@ -31,6 +31,30 @@ export default function Localizacao() {
         >
           Como <span className="text-[#cc1c1c]">Chegar</span>
         </h2>
+
+        {/* Ponto de referência — visível e indexável pelo Google */}
+        <p className="text-[#666] text-sm mt-3 max-w-xl">
+          📍 Próximo à <span className="text-[#aaa] font-medium">Rodovia Raposo Tavares</span> e{" "}
+          <span className="text-[#aaa] font-medium">Av. dos Autonomistas</span> — fácil acesso de{" "}
+          <span className="text-[#aaa] font-medium">Carapicuíba, Barueri, Cotia, Jandira</span> e
+          toda a Zona Oeste de SP.
+        </p>
+
+        {/* Bairros atendidos */}
+        <div className="flex flex-wrap gap-2 mt-4">
+          {[
+            "Helena Maria", "Jardim D'Abril", "Presidente Altino", "Km 18",
+            "Jardim Veloso", "Bonança", "COHAB", "Rochdale", "Piratininga",
+            "Umuarama", "Pestana", "Carapicuíba", "Barueri", "Cotia",
+          ].map((b) => (
+            <span
+              key={b}
+              className="text-[10px] font-semibold text-[#555] border border-[#222] px-2.5 py-1 rounded-full"
+            >
+              {b}
+            </span>
+          ))}
+        </div>
       </div>
 
       {/* Grid: mapa | info — empilha em mobile */}
