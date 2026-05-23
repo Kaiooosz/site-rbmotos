@@ -46,7 +46,7 @@ export default function Sobre() {
             </p>
             <h2 className="font-display font-black italic uppercase leading-none text-white mb-5"
               style={{ fontSize: "clamp(34px,8vw,60px)" }}>
-              Quem somos a <span className="text-[#cc1c1c]">RB</span>
+              <span className="text-[#cc1c1c]">RB</span> Moto Parts
             </h2>
             <p className="text-[#999] text-sm sm:text-base leading-relaxed mb-5">
               A RB Moto Parts nasceu da paixão pelo universo das duas rodas e da

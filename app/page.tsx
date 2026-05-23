@@ -5,6 +5,7 @@ import Produtos from "@/components/Produtos";
 import Sobre from "@/components/Sobre";
 import Diferenciais from "@/components/Diferenciais";
 import InstagramGaleria from "@/components/InstagramGaleria";
+import Depoimentos from "@/components/Depoimentos";
 import Localizacao from "@/components/Localizacao";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
@@ -19,6 +20,7 @@ export default function Home() {
         <Produtos />
         <Sobre />
         <Diferenciais />
+        <Depoimentos />
         <InstagramGaleria />
         <Localizacao />
       </main>
