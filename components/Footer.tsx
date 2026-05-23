@@ -40,6 +40,16 @@ export default function Footer() {
                 <AtSign size={16} className="text-[#888] hover:text-white" />
               </a>
               <a
+                href="https://www.tiktok.com/@motopeca_rbmotoparts"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-[#1a1a1a] border border-[#2a2a2a] flex items-center justify-center hover:bg-[#010101] hover:border-[#555] transition-all duration-200"
+              >
+                <svg className="w-4 h-4 fill-[#888]" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/>
+                </svg>
+              </a>
+              <a
                 href="https://wa.me/message/EKEEES5WV253M1"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -111,6 +121,19 @@ export default function Footer() {
                 >
                   <AtSign size={14} className="text-[#cc1c1c]" />
                   @rbmoto_parts
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.tiktok.com/@motopeca_rbmotoparts"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-[#666] hover:text-white text-sm transition-colors"
+                >
+                  <svg className="w-3.5 h-3.5 fill-[#cc1c1c] flex-shrink-0" viewBox="0 0 24 24">
+                    <path d="M19.59 6.69a4.83 4.83 0 01-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 01-2.88 2.5 2.89 2.89 0 01-2.89-2.89 2.89 2.89 0 012.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 00-.79-.05 6.34 6.34 0 00-6.34 6.34 6.34 6.34 0 006.34 6.34 6.34 6.34 0 006.33-6.34V8.69a8.18 8.18 0 004.78 1.52V6.76a4.85 4.85 0 01-1.01-.07z"/>
+                  </svg>
+                  @motopeca_rbmotoparts
                 </a>
               </li>
             </ul>
