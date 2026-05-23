@@ -7,11 +7,11 @@ import { modelosPorCategoria } from "@/data/modelos";
 const categorias = [
   {
     icon: CircleDot, nome: "Pneus",
-    marcas: ["Pirelli", "Michelin", "Bridgestone", "Metzeler", "Dunlop", "Maxxis", "Rinaldi", "Continental"],
+    marcas: ["Pirelli", "Michelin", "Bridgestone", "Metzeler", "Dunlop", "Maxxis", "Vipal", "Rinaldi", "Continental", "Kenda"],
   },
   {
     icon: HardHat, nome: "Capacetes",
-    marcas: ["LS2", "Astone", "HJC", "Shark", "Shoei", "Pro Tork", "Bieffe", "Norisk", "Texx", "Bell"],
+    marcas: ["LS2", "AGV", "Shoei", "HJC", "Shark", "Astone", "Nolan", "Pro Tork", "Bieffe", "Norisk", "Texx", "Bell", "Caberg"],
   },
   {
     icon: Flame, nome: "Escapamentos",
@@ -19,7 +19,7 @@ const categorias = [
   },
   {
     icon: Droplets, nome: "Lubrificantes",
-    marcas: ["Motul", "Castrol", "Shell Advance", "Repsol", "Liqui-Moly", "Mobil", "Valvoline", "Ipiranga", "ELF", "Total"],
+    marcas: ["Motul", "Castrol", "Repsol", "Shell Advance", "Liqui-Moly", "Mobil", "Valvoline", "Ipiranga", "Lubrax", "ELF", "Total", "Bardahl", "Agip", "Gulf"],
   },
   {
     icon: Battery, nome: "Baterias",
@@ -160,11 +160,11 @@ export default function Produtos() {
               // OEM / peças originais
               "HAMP","Honda Original","Yamaha Original","Magnetron","TDC","Nakata","Cofap",
               // Pneus
-              "Pirelli","Michelin","Bridgestone","Metzeler","Dunlop","Maxxis","Rinaldi","Continental",
+              "Pirelli","Michelin","Bridgestone","Metzeler","Dunlop","Maxxis","Vipal","Rinaldi","Continental","Kenda",
               // Óleos e lubrificantes
-              "Motul","Castrol","Shell Advance","Repsol","Liqui-Moly","Mobil","Valvoline","Ipiranga","ELF","Total",
+              "Motul","Castrol","Repsol","Shell Advance","Liqui-Moly","Mobil","Valvoline","Ipiranga","Lubrax","ELF","Total","Bardahl","Agip","Gulf",
               // Capacetes
-              "LS2","Astone","HJC","Shoei","Shark","Pro Tork","Bieffe","Norisk","Texx",
+              "LS2","AGV","Shoei","HJC","Shark","Nolan","Astone","Pro Tork","Bieffe","Norisk","Texx","Bell","Caberg",
               // Elétrica / velas
               "NGK","Denso","Bosch","Champion","Iridium Power","Philips","Osram",
               // Relação / transmissão
