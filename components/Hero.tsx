@@ -66,10 +66,16 @@ export default function Hero() {
             Agendar no WhatsApp
           </a>
           <a
-            href="#servicos"
+            href="https://www.google.com/maps/dir/?api=1&destination=-23.5013919,-46.792689"
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center justify-center gap-2 border border-white/25 hover:border-white/50 active:bg-white/10 text-white font-semibold text-base px-6 py-4 rounded-full transition-all w-full sm:w-auto"
           >
-            Ver Serviços
+            <svg className="w-4 h-4 flex-shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+            Ir até a loja
           </a>
         </div>
 
