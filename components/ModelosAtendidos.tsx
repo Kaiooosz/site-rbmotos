@@ -3,25 +3,6 @@
 import { useState } from "react";
 import { marcas } from "@/data/modelos";
 
-const tipoLabel: Record<string, string> = {
-  commuter: "Commuter",
-  sport: "Sport",
-  adventure: "Adventure",
-  scooter: "Scooter",
-  naked: "Naked",
-  trail: "Trail",
-  custom: "Custom",
-};
-
-const tipoColor: Record<string, string> = {
-  commuter: "#cc1c1c",
-  sport:    "#1565C0",
-  adventure:"#2E7D32",
-  scooter:  "#6A1B9A",
-  naked:    "#E65100",
-  trail:    "#00695C",
-  custom:   "#78350f",
-};
 
 export default function ModelosAtendidos() {
   const [marcaSelecionada, setMarcaSelecionada] = useState(marcas[0].nome);
@@ -94,15 +75,6 @@ export default function ModelosAtendidos() {
                 </div>
                 <div className="flex items-center gap-1.5">
                   <span className="text-[10px] text-[#555]">{mod.cc}</span>
-                  <span
-                    className="text-[9px] font-bold uppercase px-1.5 py-0.5 rounded-full"
-                    style={{
-                      backgroundColor: `${tipoColor[mod.tipo]}20`,
-                      color: tipoColor[mod.tipo],
-                    }}
-                  >
-                    {tipoLabel[mod.tipo]}
-                  </span>
                 </div>
               </a>
             );

@@ -1,8 +1,7 @@
 const reviews = [
   {
     nome: "Rafael Souza",
-    inicial: "R",
-    cor: "#cc1c1c",
+    foto: "https://randomuser.me/api/portraits/men/32.jpg",
     nota: 5,
     tempo: "há 2 semanas",
     texto: "Melhor oficina de Osasco! Levei minha CB 300 com problema na injeção eletrônica, me atenderam super rápido e saiu perfeito. Preço justo e transparência total. Já indiquei pra galera do trampo.",
@@ -10,8 +9,7 @@ const reviews = [
   },
   {
     nome: "Marcos Pereira",
-    inicial: "M",
-    cor: "#1565C0",
+    foto: "https://randomuser.me/api/portraits/men/45.jpg",
     nota: 5,
     tempo: "há 1 mês",
     texto: "Fui trocar os pneus da minha Fazer 250 e aproveitei pra fazer a revisão. Equipe muito profissional, me explicaram tudo que seria feito antes de começar. Loja bem organizada e com bastante opção de peça.",
@@ -19,8 +17,7 @@ const reviews = [
   },
   {
     nome: "Carlos Motoboy",
-    inicial: "C",
-    cor: "#2E7D32",
+    foto: "https://randomuser.me/api/portraits/men/12.jpg",
     nota: 5,
     tempo: "há 3 semanas",
     texto: "Sou motoboy e dependo da moto todo dia. A RB Moto Parts me salvou quando minha Bros quebrou de madrugada. Guincho rápido, consertaram no mesmo dia. Agora faço revisão aqui toda vez. Parceiros!",
@@ -28,8 +25,7 @@ const reviews = [
   },
   {
     nome: "Thiago Lima",
-    inicial: "T",
-    cor: "#6A1B9A",
+    foto: "https://randomuser.me/api/portraits/men/67.jpg",
     nota: 5,
     tempo: "há 2 meses",
     texto: "Comprei capacete e equipamentos aqui. Variedade incrível, encontrei tudo que precisava. O atendimento é diferenciado, não te empurram produto, te ajudam a escolher o melhor pra sua necessidade.",
@@ -37,8 +33,7 @@ const reviews = [
   },
   {
     nome: "Diego Ferreira",
-    inicial: "D",
-    cor: "#E65100",
+    foto: "https://randomuser.me/api/portraits/men/23.jpg",
     nota: 5,
     tempo: "há 1 semana",
     texto: "Fiz a estética da minha Honda aqui e ficou incrível! Polimento e limpeza técnica impecável. Parece que saiu 0km da concessionária. Recomendo pra qualquer motoqueiro de Osasco.",
@@ -46,8 +41,7 @@ const reviews = [
   },
   {
     nome: "Anderson Santos",
-    inicial: "A",
-    cor: "#00695C",
+    foto: "https://randomuser.me/api/portraits/men/54.jpg",
     nota: 5,
     tempo: "há 3 dias",
     texto: "Rápido, honesto e profissional. Levei pra alinhar e balancear, fizeram tudo certo, sem cobrar nada a mais. O ambiente da loja é muito organizado, dá pra ver que levam o trabalho a sério.",
@@ -113,7 +107,7 @@ export default function Depoimentos() {
           </div>
         </div>
 
-        {/* Cards — 1 col mobile, 2 col sm, 3 col lg */}
+        {/* Cards */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-10">
           {reviews.map((r) => (
             <div
@@ -123,13 +117,13 @@ export default function Depoimentos() {
               {/* Header */}
               <div className="flex items-start justify-between mb-4">
                 <div className="flex items-center gap-3">
-                  {/* Avatar com inicial */}
-                  <div
-                    className="w-10 h-10 rounded-full flex items-center justify-center text-white font-black text-base flex-shrink-0"
-                    style={{ backgroundColor: r.cor }}
-                  >
-                    {r.inicial}
-                  </div>
+                  <img
+                    src={r.foto}
+                    alt={r.nome}
+                    width={40}
+                    height={40}
+                    className="w-10 h-10 rounded-full object-cover flex-shrink-0"
+                  />
                   <div>
                     <p className="text-white text-sm font-semibold leading-tight">{r.nome}</p>
                     <p className="text-[#555] text-xs mt-0.5">{r.tempo}</p>
