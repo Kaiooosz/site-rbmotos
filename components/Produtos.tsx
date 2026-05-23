@@ -1,17 +1,6 @@
 import {
-  CircleDot,
-  HardHat,
-  Flame,
-  Droplets,
-  Battery,
-  Link,
-  Disc,
-  ArrowUpDown,
-  Zap,
-  Gauge,
-  Settings,
-  Shirt,
-  ShieldCheck,
+  CircleDot, HardHat, Flame, Droplets, Battery,
+  Link, Disc, ArrowUpDown, Zap, Gauge, Settings, Shirt, ShieldCheck,
 } from "lucide-react";
 
 const categorias = [
@@ -31,51 +20,41 @@ const categorias = [
 ];
 
 const marcas = [
-  "Yamaha",
-  "Honda",
-  "Kawasaki",
-  "Suzuki",
-  "BMW",
-  "Triumph",
-  "NGK",
-  "DID",
-  "Yuasa",
-  "Repsol",
-  "Philips",
-  "Rieffel",
+  "Yamaha", "Honda", "Kawasaki", "Suzuki", "BMW", "Triumph",
+  "NGK", "DID", "Yuasa", "Repsol", "Philips", "Rieffel",
 ];
 
 export default function Produtos() {
   return (
-    <section id="pecas" className="py-24 bg-[#0d0d0d]">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="mb-16">
-          <p className="text-[#cc1c1c] text-sm font-semibold uppercase tracking-widest mb-3">
+    <section id="pecas" className="py-16 sm:py-24 bg-[#0d0d0d]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+
+        <div className="mb-10 sm:mb-14">
+          <p className="text-[#cc1c1c] text-xs font-bold uppercase tracking-widest mb-2">
             Loja completa
           </p>
-          <h2 className="font-display font-black italic uppercase text-[clamp(36px,6vw,72px)] text-white leading-none">
+          <h2 className="font-display font-black italic uppercase leading-none text-white"
+            style={{ fontSize: "clamp(36px,9vw,72px)" }}>
             Peças & <span className="text-[#cc1c1c]">Produtos</span>
           </h2>
-          <p className="text-[#888] text-base mt-4 max-w-lg">
-            Estoque completo das melhores marcas do mercado. Peças originais e
-            de qualidade para todas as marcas e modelos.
+          <p className="text-[#888] text-sm sm:text-base mt-3 max-w-sm">
+            Estoque das melhores marcas — peças para todas as marcas e modelos.
           </p>
         </div>
 
-        {/* Grid de categorias */}
-        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 mb-16">
+        {/* Grid: 2 cols mobile → 4 cols desktop */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-10 sm:mb-14">
           {categorias.map((cat) => {
             const Icon = cat.icon;
             return (
               <div
                 key={cat.nome}
-                className="group flex flex-col items-center gap-3 bg-[#141414] border border-[#2a2a2a] hover:border-[#cc1c1c]/50 rounded-2xl p-5 cursor-pointer transition-all duration-200 hover:bg-[#cc1c1c]/5"
+                className="group flex flex-col items-center gap-2.5 bg-[#141414] border border-[#2a2a2a] hover:border-[#cc1c1c]/50 active:border-[#cc1c1c] rounded-2xl p-4 sm:p-5 cursor-pointer transition-all"
               >
-                <div className="w-11 h-11 rounded-xl bg-[#2a2a2a] group-hover:bg-[#cc1c1c] flex items-center justify-center transition-colors duration-200">
-                  <Icon size={20} className="text-[#aaa] group-hover:text-white transition-colors duration-200" />
+                <div className="w-10 h-10 rounded-xl bg-[#252525] group-hover:bg-[#cc1c1c] flex items-center justify-center transition-colors">
+                  <Icon size={18} className="text-[#aaa] group-hover:text-white transition-colors" />
                 </div>
-                <span className="text-sm font-medium text-[#ccc] group-hover:text-white text-center transition-colors duration-200">
+                <span className="text-xs sm:text-sm font-medium text-[#ccc] group-hover:text-white text-center transition-colors leading-tight">
                   {cat.nome}
                 </span>
               </div>
@@ -84,31 +63,27 @@ export default function Produtos() {
         </div>
 
         {/* Marcas */}
-        <div className="border-t border-[#2a2a2a] pt-12">
-          <p className="text-[#555] text-xs uppercase tracking-widest text-center mb-8">
+        <div className="border-t border-[#1f1f1f] pt-8 mb-8">
+          <p className="text-[#444] text-[10px] uppercase tracking-widest text-center mb-5">
             Trabalhamos com as melhores marcas
           </p>
-          <div className="flex flex-wrap justify-center gap-3">
-            {marcas.map((marca) => (
-              <span
-                key={marca}
-                className="border border-[#2a2a2a] text-[#666] text-xs font-medium uppercase tracking-wider px-4 py-2 rounded-full hover:border-[#cc1c1c]/40 hover:text-[#aaa] transition-all duration-200 cursor-default"
-              >
-                {marca}
+          <div className="flex flex-wrap justify-center gap-2">
+            {marcas.map((m) => (
+              <span key={m} className="border border-[#2a2a2a] text-[#666] text-xs font-medium uppercase tracking-wider px-3 py-1.5 rounded-full">
+                {m}
               </span>
             ))}
           </div>
         </div>
 
-        {/* CTA */}
-        <div className="mt-12 text-center">
+        <div className="text-center">
           <a
             href="https://wa.me/message/EKEEES5WV253M1"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-[#cc1c1c] hover:bg-[#e52222] text-white font-bold text-sm px-8 py-4 rounded-full transition-all duration-200 shadow-lg shadow-[#cc1c1c]/20"
+            className="inline-flex items-center justify-center gap-2 bg-[#cc1c1c] hover:bg-[#e52222] active:bg-[#a01515] text-white font-black text-sm px-8 py-4 rounded-full transition-colors w-full sm:w-auto max-w-xs"
           >
-            Consultar Disponibilidade de Peças
+            Consultar Disponibilidade
           </a>
         </div>
       </div>
