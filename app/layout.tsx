@@ -21,12 +21,21 @@ export const metadata: Metadata = {
     "Oficina mecânica completa, loja de peças e acessórios, borracharia e estética para motos em Osasco - SP. Performance, estilo e confiança sobre duas rodas.",
   keywords:
     "oficina de motos osasco, peças para moto osasco, estética moto osasco, mecânica moto helena maria, troca de óleo moto, pneu moto osasco, rb moto parts",
+  icons: {
+    icon: [
+      { url: "/icon-512.png", sizes: "512x512", type: "image/png" },
+      { url: "/icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/favicon-32.png", sizes: "32x32", type: "image/png" },
+    ],
+    apple: { url: "/icon-192.png", sizes: "180x180", type: "image/png" },
+  },
   openGraph: {
     title: "RB Moto Parts — Oficina, Peças e Estética em Osasco SP",
     description:
       "Oficina completa, peças e estética para motos em Osasco SP. Atendimento rápido, qualidade e confiança.",
     type: "website",
     locale: "pt_BR",
+    images: [{ url: "/icon-512.png", width: 512, height: 512, alt: "RB Moto Parts" }],
   },
 };
 
