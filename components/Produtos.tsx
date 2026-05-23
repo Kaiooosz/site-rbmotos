@@ -5,19 +5,58 @@ import {
 import { modelosPorCategoria } from "@/data/modelos";
 
 const categorias = [
-  { icon: CircleDot,    nome: "Pneus",        marcas: ["Pirelli", "Michelin", "Bridgestone", "Metzeler", "Dunlop"] },
-  { icon: HardHat,      nome: "Capacetes",    marcas: ["LS2", "Astone", "HJC", "Shark", "Shoei"] },
-  { icon: Flame,        nome: "Escapamentos", marcas: ["Akrapovic", "Yoshimura", "Arrow", "Leo Vince", "Scorpion"] },
-  { icon: Droplets,     nome: "Lubrificantes",marcas: ["Motul", "Castrol", "Shell", "Repsol", "Ipiranga"] },
-  { icon: Battery,      nome: "Baterias",     marcas: ["Yuasa", "Moura", "Bosch", "Heliar", "Panasonic"] },
-  { icon: Link,         nome: "Relação",      marcas: ["DID", "RK", "Tsubaki", "Regina", "AFAM"] },
-  { icon: Disc,         nome: "Freios",       marcas: ["Brembo", "EBC", "Ferodo", "TRW", "Galfer"] },
-  { icon: ArrowUpDown,  nome: "Suspensão",    marcas: ["Öhlins", "WP", "KYB", "YSS", "Bitubo"] },
-  { icon: Zap,          nome: "Elétrica",     marcas: ["NGK", "Denso", "Bosch", "Champion", "Iridium"] },
-  { icon: Gauge,        nome: "Performance",  marcas: ["Akrapovic", "K&N", "Yoshimura", "Power Commander", "Dynojet"] },
-  { icon: Settings,     nome: "Acessórios",   marcas: ["Givi", "SW-Motech", "Oxford", "Kriega", "Touratech"] },
-  { icon: Shirt,        nome: "Vestuário",    marcas: ["Alpinestars", "Dainese", "LS2", "Fox", "IMS"] },
-  { icon: ShieldCheck,  nome: "Proteção",     marcas: ["Alpinestars", "Dainese", "Knox", "Fox", "Rev'it"] },
+  {
+    icon: CircleDot, nome: "Pneus",
+    marcas: ["Pirelli", "Michelin", "Bridgestone", "Metzeler", "Dunlop", "Maxxis", "Rinaldi", "Continental"],
+  },
+  {
+    icon: HardHat, nome: "Capacetes",
+    marcas: ["LS2", "Astone", "HJC", "Shark", "Shoei", "Pro Tork", "Bieffe", "Norisk", "Texx", "Bell"],
+  },
+  {
+    icon: Flame, nome: "Escapamentos",
+    marcas: ["Akrapovic", "Yoshimura", "Arrow", "Leo Vince", "Scorpion", "Two Brothers", "Full Power", "Freio Inox"],
+  },
+  {
+    icon: Droplets, nome: "Lubrificantes",
+    marcas: ["Motul", "Castrol", "Shell Advance", "Repsol", "Liqui-Moly", "Mobil", "Valvoline", "Ipiranga", "ELF", "Total"],
+  },
+  {
+    icon: Battery, nome: "Baterias",
+    marcas: ["Yuasa", "Moura", "Heliar", "Bosch", "Panasonic", "Hankook", "Varta"],
+  },
+  {
+    icon: Link, nome: "Relação",
+    marcas: ["DID", "RK", "Tsubaki", "Regina", "AFAM", "Rieffel", "HAMP", "Honda Original"],
+  },
+  {
+    icon: Disc, nome: "Freios",
+    marcas: ["Brembo", "EBC", "Ferodo", "TRW", "Galfer", "Cofap", "Nakata", "HAMP"],
+  },
+  {
+    icon: ArrowUpDown, nome: "Suspensão",
+    marcas: ["Öhlins", "WP", "KYB", "YSS", "Bitubo", "Magneti Marelli", "Cofap"],
+  },
+  {
+    icon: Zap, nome: "Elétrica",
+    marcas: ["NGK", "Denso", "Bosch", "Champion", "Iridium Power", "Philips", "Osram", "HAMP"],
+  },
+  {
+    icon: Gauge, nome: "Performance",
+    marcas: ["Akrapovic", "K&N", "Yoshimura", "Power Commander", "Dynojet", "Hiflofiltro", "Two Brothers"],
+  },
+  {
+    icon: Settings, nome: "Acessórios",
+    marcas: ["Givi", "SW-Motech", "Oxford", "Kriega", "Touratech", "Bagster", "Hepco & Becker"],
+  },
+  {
+    icon: Shirt, nome: "Vestuário",
+    marcas: ["Alpinestars", "Dainese", "Pro Tork", "IMS", "Texx", "Bering", "Rev'it", "Fox"],
+  },
+  {
+    icon: ShieldCheck, nome: "Proteção",
+    marcas: ["Alpinestars", "Dainese", "Knox", "Fox", "Rev'it", "Pro Tork", "Texx"],
+  },
 ];
 
 const WA_SVG = (
@@ -107,6 +146,45 @@ export default function Produtos() {
               </a>
             );
           })}
+        </div>
+
+        {/* Marcas parceiras — todas */}
+        <div className="border-t border-[#1a1a1a] pt-10 mb-10">
+          <p className="text-[#444] text-[10px] uppercase tracking-widest text-center mb-5">
+            Marcas parceiras que trabalhamos
+          </p>
+          <div className="flex flex-wrap justify-center gap-2">
+            {[
+              // Motos
+              "Honda","Yamaha","Kawasaki","Suzuki","BMW","Triumph","KTM","Royal Enfield",
+              // OEM / peças originais
+              "HAMP","Honda Original","Yamaha Original","Magnetron","TDC","Nakata","Cofap",
+              // Pneus
+              "Pirelli","Michelin","Bridgestone","Metzeler","Dunlop","Maxxis","Rinaldi","Continental",
+              // Óleos e lubrificantes
+              "Motul","Castrol","Shell Advance","Repsol","Liqui-Moly","Mobil","Valvoline","Ipiranga","ELF","Total",
+              // Capacetes
+              "LS2","Astone","HJC","Shoei","Shark","Pro Tork","Bieffe","Norisk","Texx",
+              // Elétrica / velas
+              "NGK","Denso","Bosch","Champion","Iridium Power","Philips","Osram",
+              // Relação / transmissão
+              "DID","RK","Tsubaki","Regina","AFAM","Rieffel",
+              // Baterias
+              "Yuasa","Moura","Heliar","Varta",
+              // Freios
+              "Brembo","EBC","Ferodo","TRW","Galfer",
+              // Suspensão
+              "Öhlins","WP","KYB","YSS","Bitubo",
+              // Performance / filtros
+              "K&N","Hiflofiltro","Akrapovic","Yoshimura","Arrow",
+              // Acessórios
+              "Givi","Oxford","SW-Motech","Kriega",
+            ].map((m) => (
+              <span key={m} className="border border-[#222] text-[#555] text-[10px] font-medium uppercase tracking-wide px-2.5 py-1 rounded-full hover:border-[#cc1c1c]/30 hover:text-[#888] transition-all cursor-default">
+                {m}
+              </span>
+            ))}
+          </div>
         </div>
 
         <div className="text-center">

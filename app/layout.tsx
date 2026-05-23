@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Barlow_Condensed, Inter } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 
 const barlow = Barlow_Condensed({
@@ -185,6 +186,19 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
+      {/* Google Analytics 4 — G-Z8JJBK5X6L */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-Z8JJBK5X6L"
+        strategy="afterInteractive"
+      />
+      <Script id="gtag-init" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-Z8JJBK5X6L');
+        `}
+      </Script>
       <body className="min-h-full flex flex-col bg-[#0a0a0a] text-white antialiased">
         {children}
       </body>
