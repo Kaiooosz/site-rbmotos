@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Servicos from "@/components/Servicos";
 import Produtos from "@/components/Produtos";
+import ModelosAtendidos from "@/components/ModelosAtendidos";
 import Sobre from "@/components/Sobre";
 import Diferenciais from "@/components/Diferenciais";
 import InstagramGaleria from "@/components/InstagramGaleria";
@@ -18,6 +19,7 @@ export default function Home() {
         <Hero />
         <Servicos />
         <Produtos />
+        <ModelosAtendidos />
         <Sobre />
         <Diferenciais />
         <Depoimentos />
